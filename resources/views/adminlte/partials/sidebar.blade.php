@@ -32,15 +32,15 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../../index.html" class="nav-link">
+              <a href="../public/pertanyaan/create" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Pertanyaan</p>
+                <p>Buat Pertanyaan</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="../../index2.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Jawaban</p>
+                <p>Lihat Jawaban</p>
               </a>
             </li>
           </ul>

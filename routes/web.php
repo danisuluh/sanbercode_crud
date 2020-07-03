@@ -24,3 +24,10 @@ Route::get('/master', function () {
 Route::get('/data-tables', function () {
     return view('items.data');
 });
+
+
+Route::get('/pertanyaan/create', 'PertanyaanController@create');
+
+Route::post('/pertanyaan', 'PertanyaanController@store');
+
+Route::get('/items','PertanyaanController@index');

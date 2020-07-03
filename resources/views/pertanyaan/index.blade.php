@@ -2,6 +2,6 @@
 
 @section('content')
 
-<h1>Selamat Datang di Forum Tanya Jawab</h1>
+<h1>Selamat Datang di INDEX</h1>
 
 @endsection

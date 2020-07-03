@@ -1,0 +1,33 @@
+@extends('adminlte.master')
+
+@section('content')
+
+<!-- general form elements -->
+<div class="card card-primary">
+  <div class="card-header">
+    <h3 class="card-title">Buat Pertanyaan</h3>
+  </div>
+  <!-- /.card-header -->
+  <!-- form start -->
+  <form role="form" action='index' method='post'>
+    @csrf
+    <div class="card-body">
+      <div class="form-group">
+        <label for="judul">Judul Pertanyaan</label>
+        <input type="text" class="form-control" name="judul" id="judul">
+      </div>
+      <div class="form-group">
+        <label for="isi">Isi Pertanyaan</label>
+        <input type="text" class="form-control" name="isi" id="isi">
+      </div>
+    </div>
+    <!-- /.card-body -->
+
+    <div class="card-footer">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+
+
+@endsection

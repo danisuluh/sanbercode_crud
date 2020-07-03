@@ -11,8 +11,8 @@ class PertanyaanModel {
   }
 
   public static function save($data){
-    $new_items = DB::table('pertanyaan')->insert();
+    $new_item = DB::table('pertanyaan')->insert();
 
-    return $new_items;
+    return $new_item;
   }
 }
