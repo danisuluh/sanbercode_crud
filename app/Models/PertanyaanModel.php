@@ -10,8 +10,10 @@ class PertanyaanModel {
 
   }
 
-  public static function save($data){
-    $new_item = DB::table('pertanyaan')->insert();
+  public static function save($data){ //diharapkan datanya nanti dirubah menjadi array assoc
+    //hilangkan _token
+    unset($data["_token"]);
+    $new_item = DB::table('pertanyaan')->insert($data); //insert menerima array assoc
 
     return $new_item;
   }

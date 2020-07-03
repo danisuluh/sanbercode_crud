@@ -9,7 +9,7 @@
   </div>
   <!-- /.card-header -->
   <!-- form start -->
-  <form role="form" action='index' method='post'>
+  <form role="form" action="/pertanyaan" method="POST">
     @csrf
     <div class="card-body">
       <div class="form-group">

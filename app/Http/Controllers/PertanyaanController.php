@@ -13,16 +13,17 @@ class PertanyaanController extends Controller
     }
     //publik function menyimpan (@store)
     public function store (Request $request){
+     
         $new_item = PertanyaanModel::save($request->all());
 
 
-        return redirect('/pertanyaan');
+        return redirect('pertanyaan');
     }
         
     //publik function create untuk @create
     public function index (){
         $items = PertanyaanModel::get_all();
-
-        return view ('pertanyaan.index');
+        //dd($items);
+        return view ('pertanyaan.index',compact('items'));
     }
 }

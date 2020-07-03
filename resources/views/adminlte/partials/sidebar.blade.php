@@ -32,13 +32,13 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="../public/pertanyaan/create" class="nav-link">
+              <a href="{{asset('pertanyaan/create')}}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Buat Pertanyaan</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="../../index2.html" class="nav-link">
+              <a href="{{asset('jawaban')}}" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Lihat Jawaban</p>
               </a>
