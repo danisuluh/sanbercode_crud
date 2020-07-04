@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 class JawabanModel {
   public static function get_all()
   {
-      $jawaban = DB::table('jawaban')->get();
+      $jawaban = DB::table('jawabans')->get();
       return $jawaban;
   }
 
@@ -19,7 +19,7 @@ class JawabanModel {
 
   public static function save($data)
   {
-      $new_jawaban = DB::table('jawaban')->insert($data);
+      $new_jawaban = DB::table('jawabans')->insert($data);
       return $new_jawaban;
   }
 

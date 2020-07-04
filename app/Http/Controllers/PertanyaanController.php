@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\PertanyaanModel; //mengarah ke kelas PertanyaanModel
+use App\Models\PertanyaanModel; //mengarah ke kelas PertanyaanModel bukan file
 
 class PertanyaanController extends Controller
 {
@@ -22,7 +22,7 @@ class PertanyaanController extends Controller
         
     //publik function create untuk @create
     public function index (){
-        $items = PertanyaanModel::get_all();
+        $items = PertanyaanModel::get_all(); 
         //dd($items);
         return view ('pertanyaan.index',compact('items'));
     }

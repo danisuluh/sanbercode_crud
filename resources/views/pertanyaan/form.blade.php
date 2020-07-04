@@ -2,7 +2,8 @@
 
 @section('content')
 
-<!-- general form elements -->
+<div class="container">
+  <!-- general form elements -->
 <div class="card card-primary">
   <div class="card-header">
     <h3 class="card-title">Buat Pertanyaan</h3>
@@ -18,7 +19,9 @@
       </div>
       <div class="form-group">
         <label for="isi">Isi Pertanyaan</label>
-        <input type="text" class="form-control" name="isi" id="isi">
+        <textarea type="text" class="form-control" name="isi" id="isi"></textarea>
+        <input hidden name="tanggal_dibuat" value="{{\Carbon\Carbon::now()}}">
+        <input hidden name="tanggal_diperbarui" value="{{\Carbon\Carbon::now()}}">
       </div>
     </div>
     <!-- /.card-body -->
@@ -27,6 +30,7 @@
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>
   </form>
+</div>
 </div>
 
 

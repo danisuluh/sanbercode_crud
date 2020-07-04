@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\DB;
 
 class PertanyaanModel {
   public static function get_all(){
-    $items = DB::table ('pertanyaan')->get();
+    $items = DB::table ('pertanyaans')->get();
     return $items;
 
   }
@@ -13,7 +13,7 @@ class PertanyaanModel {
   public static function save($data){ //diharapkan datanya nanti dirubah menjadi array assoc
     //hilangkan _token
     unset($data["_token"]);
-    $new_pertanyaan = DB::table('pertanyaan')->insert($data); //insert menerima array assoc
+    $new_pertanyaan = DB::table('pertanyaans')->insert($data); //insert menerima array assoc
 
     return $new_pertanyaan;
   }
