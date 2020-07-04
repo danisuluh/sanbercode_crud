@@ -26,4 +26,24 @@ class PertanyaanController extends Controller
         //dd($items);
         return view ('pertanyaan.index',compact('items'));
     }
+    public function edit($id)
+    {
+        $pertanyaans = Pertanyaan::find_by_id($id);
+        return view('pertanyaan.edit', compact('pertanyaans'));
+    }
+
+    public function update($id, Request $request)
+    {
+        // dd($request);
+        $pertanyaans = Pertanyaan::update($id, $request->all());
+        return redirect('/pertanyaan');
+    }
+
+    public function hapus($id)
+    {
+        // dd($request);
+        $deleted = Pertanyaan::hapus($id);
+        return redirect('/pertanyaan');
+    }
+
 }

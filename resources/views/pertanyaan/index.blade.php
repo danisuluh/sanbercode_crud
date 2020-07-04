@@ -17,6 +17,7 @@
                 <th>Nomor</th>
                 <th>Judul</th>
                 <th>Isi Pertanyaan</th>
+                <th>Aksi</th>
               </tr>
               </thead>
               <tbody>
@@ -25,6 +26,11 @@
                     <td>{{$key+1}}</td>
                     <td>{{$item->judul}}</td>
                     <td>{{$item->isi}}</td>
+                    <td>
+                      <a class="btn btn-primary" href="/jawaban/{{ $item->id }}" role="button">Lihat Jawaban</a>
+                      <a class="btn btn-primary" href="/pertanyaan/{{ $item->id }}/edit" role="button">Ubah</a>
+                      <a class="btn btn-primary" href="#" role="button">Hapus</a>
+                    </td>
                   </tr>
                @endforeach
               </tbody>
@@ -33,6 +39,7 @@
                 <th>Nomor</th>
                 <th>Judul</th>
                 <th>Isi Pertanyaan</th>
+                <th>Aksi</th>
               </tr>
               </tfoot>
             </table>
