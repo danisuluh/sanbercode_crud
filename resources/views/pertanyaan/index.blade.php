@@ -4,7 +4,7 @@
 
 <h1>Daftar Pertanyaan</h1>
 
-<a href="/pertanyaan/create" class="btn btn-primary">
+<a href="{{url('/pertanyaan/create')}}" class="btn btn-primary">
   Isi Pertanyaan Baru
 </a>
 <!-- Main content -->
