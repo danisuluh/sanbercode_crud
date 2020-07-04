@@ -20,7 +20,7 @@
                     <th scope="row">{{ $item->id }}</th>
                     <td>{{ $item->isi }}</td>
                     <td>{{ $item->pertanyaan_id }}</td>
-                    <td><a class="btn btn-info" href="{{ route('jawabans.show',$item->pertanyaan_id) }}">Lihat</a></td>
+                    <td><a class="btn btn-info" href="{{ route('jawaban.show',$item->pertanyaan_id) }}">Lihat</a></td>
                 </tr>
                 @endforeach
             </tbody>

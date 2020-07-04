@@ -2,9 +2,9 @@
 
 @section('content')
 <br>
-@if (strlen($jawabans) <= 10) <h4>Jawaban kosong, tambahkan jawaban anda</h4>
+@if (strlen($jawaban) <= 10) <h4>Jawaban kosong, tambahkan jawaban anda</h4>
     <div class="card-body">
-        <form action="/jawaban/{{ $jawabans }}" method="POST">
+        <form action="/jawaban/{{ $jawaban }}" method="POST">
             @csrf
             <div class="form-group">
                 <label for="Description">isi jawaban</label>
@@ -40,7 +40,7 @@
                 </thead>
                 <tbody>
 
-                    @foreach ($jawabans as $data)
+                    @foreach ($jawaban as $data)
 
                     <tr>
                         <th scope="row">{{ $data->id }}</th>
